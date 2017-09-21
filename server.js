@@ -18,8 +18,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 app.use(express.static('./public'));
 
-// mongoose.connect('mongodb://localhost/monkeyDB');
-mongoose.connect('mongodb://heroku_sqm6w95l:689p3k1j43u5ic8q1fi5mtmkgh@ds141524.mlab.com:41524/heroku_sqm6w95l');
+mongoose.connect('mongodb://localhost/monkeyDB');
 var db = mongoose.connection;
 
 db.on('error', function(err) {
